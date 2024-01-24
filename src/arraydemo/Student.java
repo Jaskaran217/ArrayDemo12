@@ -6,6 +6,8 @@ package arraydemo;
  */
 public class Student {
     private int sId;
+    private String sname;
+    private String address;
 
     public int getsId() {
         return sId;
@@ -14,6 +16,7 @@ public class Student {
     public Student(int sId, String sname) {
         this.sId = sId;
         this.sname = sname;
+        this.address = address;
     }
 
     public void setsId(int sId) {
@@ -27,6 +30,13 @@ public class Student {
     public void setSname(String sname) {
         this.sname = sname;
     }
-    private String sname;
+    
+    public void setAddress(String address) {
+        this.address= address;
+    }
+    
+    public String getAddress() {
+        return address;
+    }
 }
 
